@@ -5,10 +5,6 @@ metadata:
 spec:
   containers:
   - name: nginx
-    image: almalinux:8
-    command: ["sleep", "300"]
-  - name: sidecar
-    image: almalinux:8
-    command: ["sleep", "300"]
-
-   
+    image: nginx
+    ports:
+    - containerPort: 80
