@@ -6,8 +6,7 @@ spec:
   containers:
   - name: nginx
     image: almalinux:8
-    ports:
-    - containerPort: 80
+    command: ["sleep", "300"]
   - name: sidecar
     image: almalinux:8
     command: ["sleep", "300"]
